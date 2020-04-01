@@ -11,11 +11,9 @@ Using a set of boilerplate files when you're starting a website project can be a
 * Run `npm init` to initialize npm with package.json
 * Run ` npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-postcss autoprefixer cssnano gulp-concat gulp-uglify`
   to install needed plugins
-  //
-* Run `touch gulpfile.js` to create gulpfile.js
-* Then configure gulp task    
-* Run `gulp` in order to start all tasks
-//
+//* Run `touch gulpfile.js` to create gulpfile.js
+* Then configure gulp tasks  
+* Run `gulp` in order to start all tasks//
 ## In this proejct, Gulp is configured to run the following functions:
 
 * Compile the SCSS files to CSS
