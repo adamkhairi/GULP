@@ -1,6 +1,4 @@
-# Front-end Boilerplate using Sass and Gulp 4
-
-Using a set of boilerplate files when you're starting a website project can be a huge time-saver. Instead of having to start from scratch or copy and paste from previous projects, you can get up and running in just a minute or two.
+# GULP SETUP TEMPLATE
 
 ## Quickstart guide
 
