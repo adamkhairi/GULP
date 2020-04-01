@@ -1,6 +1,7 @@
 // Initialize modules
 // Importing specific gulp API functions lets us write them below as series() instead of gulp.series()
 const { src, dest, watch, series, parallel } = require("gulp");
+
 // Importing all the Gulp-related packages we want to use
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -51,3 +52,6 @@ function watchTask() {
 // Runs the scss and js tasks simultaneously
 // then runs cacheBust, then watch task
 exports.default = series(parallel(scssTask, jsTask), watchTask);
+
+// npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-postcss
+//                        autoprefixer cssnano gulp-concat gulp-uglify
