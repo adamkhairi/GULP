@@ -16,6 +16,7 @@ Using a set of boilerplate files when you're starting a website project can be a
 * Run `touch gulpfile.js` to create gulpfile.js
 * Then configure gulp tasks  
 * Run `gulp` in order to start all tasks 
+
 |
 
 ## In this proejct, Gulp is configured to run the following functions:
