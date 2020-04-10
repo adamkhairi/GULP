@@ -1,7 +1,3 @@
-# node_modules/
-# app/
-# *.json
-# gulpfile.js
 .idea/.gitignore
 .idea/GULP.iml
 .idea/misc.xml
