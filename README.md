@@ -1,5 +1,4 @@
 # GULP SETUP TEMPLATE
-
 ## Quickstart guide
 
 * Clone or download this Git repo onto your computer.
