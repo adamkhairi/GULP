@@ -6,7 +6,7 @@ const { src, dest, watch, series, parallel } = require("gulp");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
-const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
@@ -33,8 +33,8 @@ function jsTask() {
     files.jsPath
     //,'!' + 'includes/js/jquery.min.js', // to exclude any specific files
   ])
-    .pipe(concat("all.js"))
-    .pipe(uglify())
+    .pipe(concat("main.js"))
+    .pipe(terser())
     .pipe(dest("dist/js"));
 }
 
@@ -53,5 +53,4 @@ function watchTask() {
 // then runs cacheBust, then watch task
 exports.default = series(parallel(scssTask, jsTask), watchTask);
 
-// npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-postcss
-//                        autoprefixer cssnano gulp-concat gulp-uglify
+// npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-postcss autoprefixer cssnano gulp-concat gulp-terser
