@@ -1,1 +1,1 @@
-console.log("Load script.js");
+console.log("Ready To START !");
